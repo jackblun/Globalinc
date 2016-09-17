@@ -1,5 +1,5 @@
 # Globalinc
-A visualisation of the Global Income Distribution since 1980
+A visualisation of the Global Income Distribution since 1980.
 
 Here I use data from the Global Consumption Income Project (http://gcip.info/) to build a visualisation demonstrating
 the changing shape of global income since 1980. 
