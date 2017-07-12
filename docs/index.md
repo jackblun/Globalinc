@@ -1,6 +1,5 @@
 
-{% include_relative 1980_clip.png
-max-width="2000px" %} 
+<img src="1980_clip.png" alt="hi" class="inline"/>
 
 # About
 
