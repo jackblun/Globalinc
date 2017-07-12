@@ -20,4 +20,4 @@ Visualisations created using [amCharts](https://www.amcharts.com/)
 
 Questions? Comments? Concerns? Get in touch using jackblun@gmail.com.
 
-Created by Jack Blundell (www.stanford.edu/~jackblun)
+Created by Jack Blundell [www.stanford.edu/~jackblun](www.stanford.edu/~jackblun)
