@@ -6,15 +6,8 @@ the changing shape of global income since 1980.
 
 Access the files [here](html/fig_050816_1980.html)
 
-<div class="container content">
-  
-  {{ content }}
-  {% include_relative html/fig_050816_1980.html %}
-
-</div>
-
 {% include_relative html/fig_050816_1980.html
-max-width="500px" %} 
+max-width="2000px" %} 
 
 
 
