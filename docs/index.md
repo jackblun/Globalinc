@@ -4,7 +4,7 @@ A visualisation of the Global Income Distribution since 1980.
 Here I use data from the Global Consumption Income Project (http://gcip.info/) to build a visualisation demonstrating
 the changing shape of global income since 1980. 
 
-Access the files [here](html/1980.html)
+Access the files [here](html/fig_050816_1980.html)
 
 The .html files are rough output and not designed for final presentation, but as a way to navigate through the years. To view, open the 'html' folder and click on any file. They should open in the browser and allow navigation between years.
 
