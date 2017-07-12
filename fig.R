@@ -6,13 +6,13 @@ options("scipen"=100, "digits"=4)
 ######## LOAD USEFUL PACKAGES ############
 
 library(epade)
-library(plotly)
+#library(plotly)
 library(reshape)
 
 ######## LOAD RAW DATA #######################
 
-setwd("/Users/Jack/Dropbox/Documents/Projects/CORE/Global income distribution") # set to directory containing GCIP data
-raw <- read.csv("Data/gid-excel/gid-previewexcel.csv", sep=',', header=TRUE)  # Full dataset
+setwd("C:/Users/Jack/Documents/Git/Globalinc") # set to github dir 
+raw <- read.csv("/Users/Jack/Dropbox/Documents/Projects/CORE/skyscraper/data/gid-previewexcel.csv", sep=',', header=TRUE)  # Full dataset
 full <- raw
 
 ######## EXCLUDE VARIOUS COUNTRIES ###########
@@ -20,6 +20,8 @@ full <- raw
 # Drop NZ 
 # Drop Singapore before 2005
 # Drop all countries with less than 750,000 population - this is done year by year so countries can 'grow into' the chart
+# Drop Uganda (wierd data)
+# Drop Bosnia from 1996 (mean income doubles)
 
 full <- full[which(full$country != "Hong Kong SAR, China"),]
 full <- full[which(full$population>=750000),]
@@ -28,12 +30,21 @@ full$drop <- 0
 
 for (i in 1:dim(full)[1]){
   if (full$country[i] == "New Zealand")
-full$drop[i] <- 1
+    full$drop[i] <- 1
   if (full$country[i] == "Singapore" & full$year[i] <= 2000)
-full$drop[i] <- 1
+    full$drop[i] <- 1
+  if (full$country[i] == "Uganda")
+    full$drop[i] <- 1
+  if (full$country[i] == "Bosnia and Herzegovina" & full$year[i] >= 1996)
+    full$drop[i] <- 1
+  if (full$country[i] == "Georgia"  & full$year[i] >= 1996)
+    full$drop[i] <- 1
 }
 
 full <- full[which(full$drop ==0),]
+
+######## CHECK FOR ANOMOLIES ###########
+
 
 ######## SET UP COUNTRY LABELS ####################
 
@@ -246,7 +257,7 @@ final <- sing_year.expanded[vars_list]
 ########## EXPORT AS HTML CODE FOR FIGURE ###############
 # This exports the full html with links to each year
 
-sink(paste("New figure/html/050816/fig_050816_",k,".html", sep =""))
+sink(paste("docs/html/fig_",k,".html", sep =""))
 
 cat("\n")
 cat("<!--Comment-->")
@@ -255,14 +266,70 @@ cat("<!DOCTYPE html>")
 cat("\n")
 cat("<html>")
 cat("\n")
-cat("	<head>")
+cat("<style>")
 cat("\n")
-cat("		Pick a year: <br /> <br /> ")
+cat("a:link {")
 cat("\n")
-for (i in st_year:end_year){
-  cat("		<a href=\"fig_050816_",paste(i),".html\">",paste(i),"</a>", sep ="")
-  cat("\n")
-}
+cat("  color: #4863A0;")
+cat("\n")
+cat("}")
+cat("\n")
+cat("/* visited link */")
+cat("\n")
+cat("  a:visited {")
+cat("\n")
+cat("    color: #4863A0;")
+cat("\n")
+cat("  }")
+cat("\n")
+cat("/* mouse over link */")
+cat("\n")
+cat("  a:hover {")
+cat("\n")
+cat("    color: red;")
+cat("\n")
+cat("  }")
+cat("\n")
+cat("/* selected link */")
+cat("\n")
+cat("  a:active {")
+cat("\n")
+cat("    color: #4863A0;")
+cat("\n")
+cat("  }")
+cat("\n")
+cat("a:link {")
+cat("\n")
+cat("  text-decoration: none;")
+cat("\n")
+cat("}")
+cat("\n")
+cat("a:visited {")
+cat("\n")
+cat("  text-decoration: none;")
+cat("\n")
+cat("}")
+cat("\n")
+cat("a:hover {")
+cat("\n")
+cat("  text-decoration: underline;")
+cat("\n")
+cat("}")
+cat("\n")
+cat("a:active {")
+cat("\n")
+cat("  text-decoration: underline;")
+cat("\n")
+cat("}")
+cat("\n")
+cat("</style>")
+cat("\n")  
+cat("<center>")
+cat("\n")  
+cat("<font face=\"verdana\">")
+cat("\n")  
+cat("  <head style=\"font-family:verdana\">")
+cat("\n")
 cat("		<title>Global Income Distribution | amCharts</title>")
 cat("\n")
 cat("		<meta name=\"description\" content=\"chart created using amCharts live editor\" />")
@@ -878,8 +945,21 @@ cat("	<body>")
 cat("\n")
 cat("		<div id=\"chartdiv\" style=\"width: 100%; height: 600px; background-color: #FFFFFF;\" ></div>")
 cat("\n")
+cat(" <br/> <br/>")
+cat("\n")
 cat("	</body>")
 cat("\n")
+cat(" Pick another year, or return to the <a href=\"https://jackblun.github.io/Globalinc/\">home</a> page to learn more about the project <br /> <br />")
+cat("\n")
+for (i in st_year:end_year){
+  cat("   <a href=\"fig_",paste(i),".html\">",paste(i),"</a>", sep ="") # link to other years
+  cat("\n")
+}
+cat("\n")
+  cat("</center>")
+  cat("\n")
+  cat("</font>")
+  cat("\n")
 cat("</html>")
 
 sink()

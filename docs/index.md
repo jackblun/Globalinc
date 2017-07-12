@@ -10,6 +10,8 @@ This work was created for [Core Economics](http://www.core-econ.org/). CORE is a
 
 Visualisations created using [amCharts](https://www.amcharts.com/) 
 
+The following countries included in GCIP are omitted due to concerns over data consistency: New Zealand, Singapore (before 2000), Uganda, Bosnia and Herzegovina, Georgia.
+
 # Contact
 
 Questions? Comments? Concerns? Find me at stanford.edu/~jackblun or email me at jackblun@gmail.com
