@@ -1,4 +1,4 @@
-![1980clip](https://github.com/jackblun/Globalinc/blob/master/docs/img/1980_clip.PNG){:class="img-responsive"}
+![1980_clip](/img/1980_clip.PNG){:class="img-responsive"}
 
 # About
 
