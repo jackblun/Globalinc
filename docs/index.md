@@ -1,5 +1,5 @@
 
-<img src="1980_clip.png" alt="hi" class="inline"/>
+<img src="docs/1980_clip.png" alt="" class="inline"/>
 
 # About
 
