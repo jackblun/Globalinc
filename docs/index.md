@@ -13,6 +13,10 @@ Access the files [here](html/fig_050816_1980.html)
 
 </div>
 
+{% include_relative html/fig_050816_1980.htmll
+max-width="1000px" %} 
+
+
 
 The .html files are rough output and not designed for final presentation, but as a way to navigate through the years. To view, open the 'html' folder and click on any file. They should open in the browser and allow navigation between years.
 
