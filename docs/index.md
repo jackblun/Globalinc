@@ -1,5 +1,4 @@
-
-<img src="img/1980_clip.png" alt="" class="inline"/>
+![My helpful screenshot](/img/clip_1980.png)
 
 # About
 
