@@ -1,6 +1,6 @@
 # About
 
-Here I use PPP-adjusted data on real incomes from the Global Consumption Income Project (http://gcip.info/) to build an interactive visualisation demonstrating the changing shape of global income since 1980. 
+Here I use PPP-adjusted data on real incomes from the [Global Consumption Income Project](http://gcip.info/) to build an interactive visualisation demonstrating the changing shape of global income since 1980. 
 
 Access the full set of interactive graphs [here](html/fig_1980.html). You may need to allow your browser to load scripts from unauthorized sources to enable the graphs to load properly. These are detailed figures so may take a little time to load.
 
