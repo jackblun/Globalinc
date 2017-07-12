@@ -12,7 +12,7 @@ Taller blocks correspond to higher incomes. Countries with larger populations ar
 
 ![1980_clip](/img/1980_clip.PNG){:class="img-responsive"}
 
-This work was created for [Core Economics](http://www.core-econ.org/). CORE is an open-access, interactive ebook-based course for anyone interested in learning about the economy and economics.
+This work was created for [Core Economics](http://www.core-econ.org/). Core is an open-access, interactive ebook-based course for anyone interested in learning about the economy and economics.
 
 Visualisations created using [amCharts](https://www.amcharts.com/) 
 
