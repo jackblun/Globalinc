@@ -1,4 +1,4 @@
-![My helpful screenshot](/docs/img/1980_clip.jpg)
+![My helpful screenshot](/docs/img/1980_clip.JPG)
 
 # About
 
