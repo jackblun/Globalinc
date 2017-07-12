@@ -1,6 +1,5 @@
 ---
 title: Global Income Distribution
-layout: post
 ---
 
 # About
