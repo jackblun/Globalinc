@@ -14,4 +14,4 @@ Visualisations created using [amCharts](https://www.amcharts.com/)
 
 # Contact
 
-Questions? Comments? Concerns? Find me at stanford.edu/~jackblun or email me at jackblun@gmail.com
+Questions? Comments? Concerns? Find me at www.stanford.edu/~jackblun or email me at jackblun@gmail.com
