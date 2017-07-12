@@ -1,4 +1,4 @@
-![1980_clip](https://github.com/jackblun/Globalinc/blob/master/docs/img/1980_clip.JPG)
+![1980_clip](https://github.com/jackblun/Globalinc/blob/master/docs/img/1980_clip.PNG)
 
 # About
 
