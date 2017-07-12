@@ -14,7 +14,7 @@ Access the files [here](html/fig_050816_1980.html)
 </div>
 
 {% include_relative html/fig_050816_1980.html
-max-width="1000px" %} 
+max-width="500px" %} 
 
 
 
