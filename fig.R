@@ -1,23 +1,36 @@
-############ GLOBAL INCOME DISTRIBUTION GRAPH #######################
+############################################################
+### Global Income Distribution graph
+
+# Jack Blundell
+# Stanford University
+# Spring 2017
+
+############################################################
+## This file takes GCIP data and produces .html graphs
+## CORE
+
+### 1. Setup
+############################################################
 
 rm(list = ls()) 	
 options("scipen"=100, "digits"=4)
 
-######## LOAD USEFUL PACKAGES ############
+
+setwd("C:/Users/Jack/Documents/Git/Globalinc") # set to github dir
 
 library(epade)
 #library(plotly)
 library(reshape)
+#library(rJava)
+#library(xlsx)
 
-######## LOAD RAW DATA #######################
-
-setwd("C:/Users/Jack/Documents/Git/Globalinc") # set to github dir 
+ 
 raw <- read.csv("/Users/Jack/Dropbox/Documents/Projects/CORE/skyscraper/data/gid-previewexcel.csv", sep=',', header=TRUE)  # Full dataset
 full <- raw
 
-######## EXCLUDE VARIOUS COUNTRIES ###########
+### 2. Filter countries
+############################################################
 # Drop HK
-# Drop NZ 
 # Drop Singapore before 2005
 # Drop all countries with less than 750,000 population - this is done year by year so countries can 'grow into' the chart
 # Drop Uganda (wierd data)
@@ -29,8 +42,6 @@ full <- full[which(full$population>=750000),]
 full$drop <- 0
 
 for (i in 1:dim(full)[1]){
-  if (full$country[i] == "New Zealand")
-    full$drop[i] <- 1
   if (full$country[i] == "Singapore" & full$year[i] <= 2000)
     full$drop[i] <- 1
   if (full$country[i] == "Uganda")
@@ -43,10 +54,8 @@ for (i in 1:dim(full)[1]){
 
 full <- full[which(full$drop ==0),]
 
-######## CHECK FOR ANOMOLIES ###########
-
-
-######## SET UP COUNTRY LABELS ####################
+### 2. Set up country labels and colour codes
+############################################################
 
 # Set which countries to label
 count_label <- c("United States","United Kingdom","China","India","Nigeria","Indonesia","Brazil","Botswana","Japan","Norway")
@@ -65,8 +74,6 @@ for (i in 1:dim(full)[1]){
 #    full$labcol[i] <- "FFFFFF"
 #  }
 
-
-####### SET UP COLOUR CODES WITH COUNTRIES ###########
 #http://www.strangeplanet.fr/work/gradient-generator/index.php is a useful tool
 
 
@@ -118,7 +125,8 @@ for (i in 1:dim(full)[1]){
   new_count_colname <- list() # these are used later in assigning colours to countries that are not present in the 1980 chart
   new_count_col <- list()
   
-####### CONVERT MONTHLY INCOME TO ANNUAL #############
+### 3. Convert income
+############################################################
 
 full$income1 <- 12*full$income1
 full$income2 <- 12*full$income2
@@ -131,7 +139,8 @@ full$income8 <- 12*full$income8
 full$income9 <- 12*full$income9
 full$income10 <- 12*full$income10
 
-####### SET UP TO LOOP OVER YEARS ##################
+### 4. Main Loop
+############################################################
 # Could also just list individual years, but need to alter export section at end of this script accordingly
 
 st_year <- 1980 # first year
@@ -139,20 +148,20 @@ end_year <- 2014 # last year
 
 for (k in st_year:end_year){ #
   
-####### USEFUL TOGGLES ###################
+### Useful toggles
 
 yr <- k # choose a year to display
 
 sing_year <- full[which(full$year==yr), ] # Dataset for a single year
 
-######### ASSIGN COLOURS PT 1 ##########
+### Assign colours pt 1
 
 # assign colours from 1980 ranking
 
 sing_year_col <- merge(sing_year,country_col,by="country", all.x = TRUE, sort = FALSE)
 sing_year <- sing_year_col
 
-######### ORDER BY AVERAGE INCOME ##########
+### Order by average income
 
 attach(sing_year)
 sing_year <- sing_year[order(mean),]
@@ -162,7 +171,7 @@ country_list <- sing_year$country # Extract country list
 
 ncount <- length(country_list) # Number of countries in dataset for this year
 
-######## ASSIGN COLOURS PT 2 #############
+### Assign colours pt 2
 # if a country was not in the dataset in 1980, they now need to be assigned a colour.
 # I assign them a colour roughly suitable to their starting position in the spectrum.
 # NB: somewhat fiddly code here
@@ -187,7 +196,8 @@ for (i in 1:dim(sing_year)[1]) {
 }
 
 
-######### SCALE BY POPULATION ############
+### Scale by population
+
 # Here I adjust so that the total size of the graph does not change over years
 
 Prop_pop <- sing_year$population # Proportion of worold population in each country
@@ -200,7 +210,7 @@ sing_year.expanded <- sing_year[rep(row.names(sing_year), Prop_pop_rd), 1:dim(si
 
 nbars <- dim(sing_year.expanded)[1] # Number of bars, ie pop*countries
 
-######## MOVE LABELS ##########
+### Move labels
 # For countries with large populations (and hence more than one bloack in chart), we only want one label. This code deletes all but the first label.
 
 for (i in 2:dim(sing_year.expanded)[1]) {
@@ -236,7 +246,7 @@ for (i in 1:(dim(sing_year.expanded)[1]-10)) {
   }
 }
 
-######### GENERATE RESTRICTED DATASET ##########
+### Gen restricted dataset
 
 vars_list <- c("country","income1", "income2", "income3", "income4", "income5", "income6",
             "income7", "income8", "income9", "income10","col","lab") #trans", "labcol"
@@ -250,11 +260,12 @@ final <- sing_year.expanded[vars_list]
 #  temp[,i] = deciles[,11 -i]
 #deciles <- temp
 
-########## EXPORT NEW DATA FILE ###############
+
+### 5. Export as .html code
+############################################################
 
 #write.csv(final, file = paste("Data/data", yr))
 
-########## EXPORT AS HTML CODE FOR FIGURE ###############
 # This exports the full html with links to each year
 
 sink(paste("docs/html/fig_",k,".html", sep =""))
