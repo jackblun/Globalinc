@@ -2,9 +2,7 @@
 title: Global Income Distribution
 ---
 
-<div class="buttonHolder">
 [Click here to go to the graphs](html/fig_1980.html){: .button}
-</div>
 
 # About
 
