@@ -2,7 +2,7 @@
 title: Global Income Distribution
 ---
 
-[Click me](http://www.google.com){: .btn}
+[Click me](http://www.google.com){: .button}
 
 <p align="center">
 [Take me to the graphs!](html/fig_1980.html)
