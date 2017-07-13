@@ -74,7 +74,7 @@ for (i in 1:dim(full)[1]){
 #    full$labcol[i] <- "FFFFFF"
 #  }
 
-#http://www.strangeplanet.fr/work/gradient-generator/index.php is a useful tool
+#https://www.strangeplanet.fr/work/gradient-generator/index.php is a useful tool
 
 
 ### Option 1: background colours with a few countries highlighted
@@ -349,13 +349,13 @@ cat("")
 cat("\n")
 cat("		<!-- amCharts javascript sources -->")
 cat("\n")
-cat("		<script type=\"text/javascript\" src=\"http://www.amcharts.com/lib/3/amcharts.js\"></script>")
+cat("		<script type=\"text/javascript\" src=\"https://www.amcharts.com/lib/3/amcharts.js\"></script>")
 cat("\n")
-cat("		<script type=\"text/javascript\" src=\"http://www.amcharts.com/lib/3/serial.js\"></script>")
+cat("		<script type=\"text/javascript\" src=\"https://www.amcharts.com/lib/3/serial.js\"></script>")
 cat("\n")
-cat("		<script type=\"text/javascript\" src=\"http://www.amcharts.com/lib/3/plugins/export/export.js\"></script>")
+cat("		<script type=\"text/javascript\" src=\"https://www.amcharts.com/lib/3/plugins/export/export.js\"></script>")
 cat("\n")
-cat("		<link rel=\"stylesheet\" href=\"http://www.amcharts.com/lib/3/plugins/export/export.css\">")
+cat("		<link rel=\"stylesheet\" href=\"https://www.amcharts.com/lib/3/plugins/export/export.css\">")
 cat("\n")
 cat("")
 cat("\n")
