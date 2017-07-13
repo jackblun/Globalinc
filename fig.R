@@ -959,7 +959,21 @@ cat("\n")
 cat(" <br/> <br/>")
 cat("\n")
 cat("	</body>")
+
+if (k == 1980){
+  cat("   <a href=\"fig_1981",".html\">","Next year","</a>", sep ="") # link to other years
+  cat("\n")
+} else if (k == 2014) {
+  cat("   <a href=\"fig_2013",".html\">","Previous year","</a>", sep ="") # link to other years
+  cat("\n")  
+} else {
+  cat("   <a href=\"fig_",paste(k-1),".html\">","Previous year","</a>", sep ="") # link to other years
+  cat("\n")
+  cat(" <br/> <br/>")
+  cat(" <a href=\"fig_",paste(k+1),".html\">","Next year","</a>", sep ="")
+}
 cat("\n")
+cat(" <br/> <br/>")
 cat(" Pick another year, or return to the <a href=\"https://jackblun.github.io/Globalinc/\">home</a> page to learn more about the project <br /> <br />")
 cat("\n")
 for (i in st_year:end_year){
