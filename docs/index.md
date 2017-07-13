@@ -2,9 +2,13 @@
 title: Global Income Distribution
 ---
 
-<p align="center">
-[Click here to go the graphs](html/fig_1980.html){: .button}
-</p>
+<center>
+[Click here to go to the graphs](html/fig_1980.html){: .button}
+</center>
+
+
+[![button](http://www.presentationpro.com/images/product/medium/slide/PPP_CGENE_LT3_Presentation-PowerPoint-Slide-Graphic_Push_Button_Up.jpg)](https://mattermost.com)
+
 
 # About
 
