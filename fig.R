@@ -983,7 +983,7 @@ for (i in st_year:end_year){
 cat("\n")
 cat(" <br/> <br/>")
 cat("\n")
-cat("These are detailed figures so may take a little time to load")
+cat("These are detailed figures so may take a little time to load. Taller blocks correspond to higher incomes. Countries with larger populations are assigned more blocks. Colours correspond to how rich the country is in 1980, with poorer countries shaded red and richer countries shaded green. Try hovering over a block to learn more!")
 cat("\n")
   cat("</center>")
   cat("\n")
