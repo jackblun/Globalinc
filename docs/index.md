@@ -5,9 +5,6 @@ title: Global Income Distribution
 [Click here to go to the graphs](html/fig_1980.html){: .button}
 
 
-[![button](http://www.presentationpro.com/images/product/medium/slide/PPP_CGENE_LT3_Presentation-PowerPoint-Slide-Graphic_Push_Button_Up.jpg)](https://mattermost.com)
-
-
 # About
 
 Here we use PPP-adjusted data on real incomes from the [Global Consumption and Income Project](http://gcip.info/) to build an interactive visualisation demonstrating the changing shape of global income since 1980. 
