@@ -2,7 +2,7 @@
 title: Global Income Distribution
 ---
 
-[Click here to go to the graphs](html/fig_1980.html){: .button}
+<center>[Click here to go to the graphs](html/fig_1980.html){: .button}</center>
 
 
 # About
