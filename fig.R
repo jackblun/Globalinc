@@ -967,6 +967,10 @@ for (i in st_year:end_year){
   cat("\n")
 }
 cat("\n")
+cat(" <br/> <br/>")
+cat("\n")
+cat("Having trouble seeing the graphs? You may need to allow your browser to load scripts from unauthorized / unsafe sources to enable the graphs to load properly. These are detailed figures so may take a little time to load.")
+cat("\n")
   cat("</center>")
   cat("\n")
   cat("</font>")
