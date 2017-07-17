@@ -50,6 +50,12 @@ for (i in 1:dim(full)[1]){
     full$drop[i] <- 1
   if (full$country[i] == "Georgia"  & full$year[i] >= 1996)
     full$drop[i] <- 1
+  if (full$country[i] == "New Zealand")
+    full$drop[i] <- 1
+}
+
+if (year == 2014 & drop )  {
+  sum(full$population)
 }
 
 full <- full[which(full$drop ==0),]
@@ -969,10 +975,9 @@ if (k == 1980){
   cat("   <a href=\"fig_2013",".html\">","Previous year","</a>", sep ="") # link to other years
   cat("\n")  
 } else {
-  cat("   <a href=\"fig_",paste(k-1),".html\">","Previous year","</a>", sep ="") # link to other years
-  cat("\n")
-  cat(" <br/> <br/>")
-  cat(" <a href=\"fig_",paste(k+1),".html\">","Next year","</a>", sep ="")
+  cat("   <a href=\"fig_",paste(k-1),".html\">","<<< Previous year","</a>", sep ="") # link to other years
+  cat(" ------- ")
+  cat(" <a href=\"fig_",paste(k+1),".html\">","Next year >>>","</a>", sep ="")
 }
 cat("\n")
 cat(" <br/> <br/>")
@@ -984,6 +989,14 @@ cat("\n")
 cat(" <br/> <br/>")
 cat("\n")
 cat("These are detailed figures so may take a little time to load. Taller blocks correspond to higher incomes. Countries with larger populations are assigned more blocks. Colours correspond to how rich the country is in 1980, with poorer countries shaded red and richer countries shaded green. Countries are ordered according to mean income level in each year, while holding colours fixed from the 1980 levels. Therefore with these figures we can see inequality within and across countries over time as well as changes in average income. Try hovering over a block to learn more!")
+cat("\n")
+cat(" <br/> <br/>")
+cat("\n")
+cat("Source: Global Consumption and Income Project")
+cat("\n")
+cat(" <br/> <br/>")
+cat("\n")
+cat("The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand. These countries consistuted less than 0.1% of world population in 2014.")
 cat("\n")
   cat("</center>")
   cat("\n")
