@@ -969,10 +969,10 @@ cat(" Pick another year, or return to the <a href=\"https://jackblun.github.io/G
 cat("\n")
 #cat(" <br/>")
 if (k == 1980){
-  cat("   <a href=\"fig_1981",".html\">","Next year","</a>", sep ="") # link to other years
+  cat("   <a href=\"fig_1981",".html\">","Next year >>>","</a>", sep ="") # link to other years
   cat("\n")
 } else if (k == 2014) {
-  cat("   <a href=\"fig_2013",".html\">","Previous year","</a>", sep ="") # link to other years
+  cat("   <a href=\"fig_2013",".html\">","<<< Previous year","</a>", sep ="") # link to other years
   cat("\n")  
 } else {
   cat("   <a href=\"fig_",paste(k-1),".html\">","<<< Previous year","</a>", sep ="") # link to other years
