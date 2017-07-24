@@ -2,12 +2,9 @@
 title: Global Income Distribution
 ---
 
-<div class="img_container">
-![image-right](https://github.com/jackblun/Globalinc/blob/master/docs/img/core-logo-red.png){: height="36px" width="36px"}
-</div>
 
-
-A project for ![image-right](/img/core-logo-red.png){: .align-right  height="30%" width="30%" style="text-align: right"}
+{: .right}
+![image](/img/core-logo-red.png){:class="img-responsive" height="30%" width="30%"}](http://www.core-econ.org/)
 
 # About
 
