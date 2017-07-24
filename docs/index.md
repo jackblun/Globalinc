@@ -1,7 +1,7 @@
 ---
 title: Global Income Distribution
 ---
-tma[![Core logo](/img/core_logo.png){:class="img-responsive"}](http://www.core-econ.org/)
+[![Core logo](/img/core_logo.png){:class="img-responsive"}](http://www.core-econ.org/)
 
 # Global Income Distribution
 
