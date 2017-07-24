@@ -20,7 +20,7 @@ This work was created for [The CORE Project](http://www.core-econ.org/). CORE is
 
 Visualisations created using [amCharts](https://www.amcharts.com/) 
 
-Bob Sutcliff designed the representation of global inequality in this figure and supplied the data. A first version was published in: Sutcliffe, Robert B. 2001. *100 Ways of Seeing an Unequal World.* London: Zed Books.
+Bob Sutcliffe designed the representation of global inequality in this figure. A first version was published in: Sutcliffe, Robert B. 2001. *100 Ways of Seeing an Unequal World.* London: Zed Books.
 
 # Contact
 
