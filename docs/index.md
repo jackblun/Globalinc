@@ -6,7 +6,7 @@ title: Global Income Distribution
 {: .right}
 [![image](/img/core-logo-red.png){:class="img-responsive" height="30%" width="30%"}](http://www.core-econ.org/)
 
-# About
+## About
 
 Here we use PPP-adjusted data on real incomes from the [Global Consumption and Income Project](http://gcip.info/) to build an interactive visualisation demonstrating the changing shape of global income since 1980. 
 
@@ -22,13 +22,13 @@ Visualisations created using [amCharts](https://www.amcharts.com/)
 
 Bob Sutcliffe designed the representation of global inequality in this figure. A first version was published in: Sutcliffe, Robert B. 2001. *100 Ways of Seeing an Unequal World.* London: Zed Books.
 
-# Contact
+## Contact
 
 Questions? Comments? Concerns? Get in touch using jackblun@gmail.com.
 
 Created by Jack Blundell [(www.stanford.edu/~jackblun)](http://www.stanford.edu/~jackblun)
 
-# Countries included in GCIP
+## Countries included in GCIP
 
 Afghanistan, Albania, Algeria, Angola, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, The, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia, Bosnia and Herzegovina, Botswana, Brazil, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cambodia, Cameroon, Canada, Central African Republic, Chad, Chile, China, Colombia, Comoros, Congo, Dem. Rep., Congo, Rep., Costa Rica, Cote d'Ivoire, Croatia, Cyprus, Czech Republic, Denmark, Djibouti, Dominican Republic, Ecuador, Egypt, El Salvador, Estonia, Ethiopia, Fiji, Finland, France, Gabon, Gambia, Georgia, Germany, Ghana, Greece, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hong Kong SAR, China, Hungary, Iceland, India, Indonesia, Iran, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Korea, Rep., Kyrgyz Republic, Lao, Latvia, Lesotho, Liberia, Lithuania, Luxembourg, Macedonia, FYR, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Mauritania, Mauritius, Mexico, Micronesia, Fed. Sts., Moldova, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nepal, Netherlands, New Zealand, Nicaragua, Niger, Nigeria, Norway, Pakistan, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Romania, Russian Federation, Rwanda, Sao Tome and Principe, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovak Republic, Slovenia, South Africa, Spain, Sri Lanka, St. Lucia, Sudan, Suriname, Swaziland, Sweden, Switzerland, Syrian Arab Republic, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Trinidad and Tobago, Tunisia, Turkey, Turkmenistan, Uganda, Ukraine, United Kingdom, United States, Uruguay, Uzbekistan, Venezuela, Vietnam, West Bank and Gaza, Zambia
 
