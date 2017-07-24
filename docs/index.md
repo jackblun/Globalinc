@@ -2,7 +2,12 @@
 title: Global Income Distribution
 ---
 
-A project for ![image-right](/img/core-logo-red.png){: .align-right  height="30%" width="30%"}
+<div class="img_container">
+![image-right](/img/core-logo-red.png){: height="36px" width="36px"}
+</div>
+
+
+A project for ![image-right](/img/core-logo-red.png){: .align-right  height="30%" width="30%" style="text-align: right"}
 
 # About
 
