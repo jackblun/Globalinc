@@ -12,7 +12,7 @@ a:link {
   }
 /* mouse over link */
   a:hover {
-    color:F55754;
+    color: #F55754;
   }
 /* selected link */
   a:active {
@@ -30,15 +30,40 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+body {
+  padding: 0px 0px 0px 0px;
+  background-color: #F3F2F7;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 div {
   background-color: #F3F2F7;
      font-family: 'Source Sans Pro', sans-serif;
 }
+.header {
+position: absolute;
+  top: 0px;
+  left: 0px;
+margin-top: 0;
+font-weight: bold;
+font-size: 25px;
+display: inline-block;
+  color: white;
+  padding: 15px 5px 15px 5px;
+  background-color: #F55754;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
 </style>
 </head>
 <body>
+<body>
+<div class = "header">Global Income Distribution - 2008</div>
+<br>
+<br>
+<br>
 <center>
-<div>
 		<title>Global Income Distribution | amCharts</title>
 		<meta name="description" content="chart created using amCharts live editor" />
 
@@ -310,13 +335,6 @@ div {
 					"balloon": {
 						"fixedPosition": false
 					},
-					"titles": [
-						{
-							"id": "Title-1",
-							"size": 20,
-							"text": "Global Income Distribution 2008"
-						}
-					],
 					"dataProvider": [
 					// insert data here
 {
@@ -3429,7 +3447,6 @@ These are detailed figures so may take a little time to load. Taller blocks corr
 Source: Global Consumption and Income Project
  <br/> <br/>
 The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand. These countries consistuted less than 0.1% of world population in 2014.
-</div>
 </center>
  </body>
 </html>
