@@ -3,7 +3,7 @@ title: Global Income Distribution
 ---
 
 <img style="float: right;" src="/img/core-logo-red.png">
-.right[![CORE](/img/core-logo-red.png){:class="img-responsive" height="100%" width="100%" }](http://www.core-econ.org/)
+.right[![CORE](/img/core-logo-red.png){:class="img-responsive" height="50%" width="50%" .image-right }](http://www.core-econ.org/)
 
 # About
 
