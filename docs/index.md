@@ -2,6 +2,11 @@
 title: Global Income Distribution
 ---
 
+
+{: .right}
+![image](https://education.github.com/assets/sdp-backpack-6f872c4211af1bac3aef0c6e2b5fbb7a.png "Github Developer Pack")
+
+
 <div class="img_container">
 ![image-right](https://github.com/jackblun/Globalinc/blob/master/docs/img/core-logo-red.png){: height="36px" width="36px"}
 </div>
