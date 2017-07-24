@@ -2,7 +2,7 @@
 title: Global Income Distribution
 ---
 
-# Global Income Distribution
+# About
 
 Here we use PPP-adjusted data on real incomes from the [Global Consumption and Income Project](http://gcip.info/) to build an interactive visualisation demonstrating the changing shape of global income since 1980. 
 
