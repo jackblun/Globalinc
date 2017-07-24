@@ -3,7 +3,7 @@ title: Global Income Distribution
 ---
 
 <div class="img_container">
-![image-right](/img/core-logo-red.png){: height="36px" width="36px"}
+![image-right](docs/img/core-logo-red.png){: height="36px" width="36px"}
 </div>
 
 
