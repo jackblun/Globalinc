@@ -4,15 +4,7 @@ title: Global Income Distribution
 
 
 {: .right}
-![image](/img/core-logo-red.png)
-
-
-<div class="img_container">
-![image-right](https://github.com/jackblun/Globalinc/blob/master/docs/img/core-logo-red.png){: height="36px" width="36px"}
-</div>
-
-
-A project for ![image-right](/img/core-logo-red.png){: .align-right  height="30%" width="30%" style="text-align: right"}
+![image](/img/core-logo-red.png){height="30%" width="30%"}
 
 # About
 
