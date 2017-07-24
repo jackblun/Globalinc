@@ -2,6 +2,8 @@
 title: Global Income Distribution
 ---
 
+[![CORE](/img/core-logo-bw.png){:class="img-responsive" height="100%" width="100%"}](http://www.core-econ.org/)
+
 # About
 
 Here we use PPP-adjusted data on real incomes from the [Global Consumption and Income Project](http://gcip.info/) to build an interactive visualisation demonstrating the changing shape of global income since 1980. 
