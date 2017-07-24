@@ -1,11 +1,11 @@
 ---
 title: Global Income Distribution
 ---
+<p align="left">
 [![Core logo](/img/core_logo.png){:class="img-responsive"}](http://www.core-econ.org/)
+</p>
 
 # Global Income Distribution
-
-## A visualization of the global income distribution since 1980
 
 [Click here to go to the graphs](html/fig_1980.html){: .button}
 
