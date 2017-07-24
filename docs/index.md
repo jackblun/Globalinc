@@ -2,9 +2,7 @@
 title: Global Income Distribution
 ---
 
-![image-right](/img/core-logo-red.png){: .align-right}
-
-![image-right](/img/core-logo-red.png){:class="img-responsive" height="50%" width="50%" .align-right }](http://www.core-econ.org/)
+A project for ![image-right](/img/core-logo-red.png){: .align-right  height="40%" width="40%"}
 
 # About
 
