@@ -417,7 +417,7 @@ cat("<div class = \"header\"> <center> Global Income Distribution - " ,paste(k),
 cat("\n") 
 cat("<div class = \"topleft\">")
 cat("\n") 
-cat("<a href=\"www.core-econ.org/\">")
+cat("<a href=\"http://www.core-econ.org/\">")
 cat("\n") 
 cat("<img align= \"left\"border=\"0\" alt=\"CORE\" src=\"../img/core-logo-bw.png\" width=\"100%\" height=\"100%\">")
 cat("\n") 
