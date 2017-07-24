@@ -16,6 +16,11 @@
 
 #header_wrap {
   background: #F55754;
+  background: -moz-linear-gradient(top, #F55754, #F55754);
+  background: -webkit-linear-gradient(top, #F55754, #F55754);
+  background: -ms-linear-gradient(top, #F55754, #F55754);
+  background: -o-linear-gradient(top, #F55754, #F55754);
+  background: linear-gradient(top, #F55754, #F55754);
 }
 
 header { 
@@ -59,11 +64,10 @@ a {
   top:0;
   right: 10px;
   z-index: 10;
-  padding: 10px 50px 10px 10px;
+  padding: 1px 1px 1px 1px;
   color: #fff;
-  background: url('../img/core_logo.png') #0090ff no-repeat 95% 50%;
+  background: url('img/core_logo.png') #fff no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
