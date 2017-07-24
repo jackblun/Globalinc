@@ -1,21 +1,20 @@
 ---
 title: Global Income Distribution
 ---
-[![Core logo](/img/core_logo.png){:class="img-responsive"}](http://www.core-econ.org/)
 
 # Global Income Distribution
 
-[Click here to go to the graphs](html/fig_1980.html){: .button}
-
 Here we use PPP-adjusted data on real incomes from the [Global Consumption and Income Project](http://gcip.info/) to build an interactive visualisation demonstrating the changing shape of global income since 1980. 
 
-Access the full set of interactive graphs [here](html/fig_1980.html). These are detailed figures so may take a little time to load.
+[Click here to go to the graphs](html/fig_1980.html){: .button}
 
 Taller blocks correspond to higher incomes. Countries with larger populations are assigned more blocks. Colours correspond to how rich the country is in 1980, with poorer countries shaded red and richer countries shaded green. Countries are ordered according to mean income level in each year, while holding colours fixed from the 1980 levels. Therefore with these figures we can see inequality within and across countries over time as well as changes in average income.
 
 [![1980_clip](/img/1980_clip.PNG){:class="img-responsive"}](html/fig_1980.html)
 
 This work was created for [The CORE Project](http://www.core-econ.org/). CORE is an open-access, interactive ebook-based course for anyone interested in learning about the economy and economics.
+
+[![Core logo](/img/core_logo.png){:class="img-responsive"}](http://www.core-econ.org/)
 
 Visualisations created using [amCharts](https://www.amcharts.com/) 
 
