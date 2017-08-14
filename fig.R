@@ -296,7 +296,7 @@ final <- sing_year.expanded[vars_list]
 
 # This exports the full html with links to each year
 
-#sink(paste("docs/html/fig_",k,".html", sep ="")) # comment out to restrict output
+sink(paste("docs/html/fig_",k,".html", sep ="")) # comment out to restrict output
 
 cat("\n")
 cat("<!--Comment-->")
@@ -1053,8 +1053,7 @@ cat("\n")
 cat("		<div id=\"chartdiv\" style=\"width: 100%; height: 600px; background-color: #F3F2F7;\" ></div>")
 cat("\n")
 cat(" <br/>")
-
-cat(" Pick another year, or return to the <a href=\"https://jackblun.github.io/Globalinc/\">home</a> page to learn more about the project <br /> <br />")
+cat("<a href=\"https://raw.githubusercontent.com/jackblun/Globalinc/master/GCIPrawdata.csv\" download =\"download\"> Download the data </a>, pick another year, or return to the <a href=\"https://jackblun.github.io/Globalinc/\">home</a> page to learn more about the project <br /> <br />")
 cat("\n")
 #cat(" <br/>")
 if (k == 1980){
@@ -1093,6 +1092,6 @@ cat(" </body>")
 cat("\n")
 cat("</html>")
 
-#sink() # comment out if not producing output
+sink() # comment out if not producing output
 
 }
