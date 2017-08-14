@@ -54,9 +54,9 @@ for (i in 1:dim(full)[1]){
     full$drop[i] <- 1
 }
 
-if (year == 2014 & drop )  {
-  sum(full$population)
-}
+#if (year == 2014 & drop )  {
+#  sum(full$population)
+#}
 
 full <- full[which(full$drop ==0),]
 
@@ -145,7 +145,29 @@ full$income8 <- 12*full$income8
 full$income9 <- 12*full$income9
 full$income10 <- 12*full$income10
 
-### 4. Main Loop
+### 4. Export data as .csv
+############################################################
+
+tab.dat <- full[which(full$year>=1980 & full$year<=2014),]
+keep.vars <- c("country","income1","income2","income3","income4","income5","income6",
+               "income7","income8","income9","income10","mean","population","year")
+tab.dat <- tab.dat[,which(names(tab.dat) %in% keep.vars)]
+names(tab.dat) <- c("Country","Year","Decile 1 Income","Decile 2 Income","Decile 3 Income","Decile 4 Income",
+                    "Decile 5 Income","Decile 6 Income","Decile 7 Income","Decile 8 Income","Decile 9 Income",
+                    "Decile 10 Income","Mean Income","Population")
+round.vars <- c("Decile 1 Income","Decile 2 Income","Decile 3 Income","Decile 4 Income",
+                "Decile 5 Income","Decile 6 Income","Decile 7 Income","Decile 8 Income","Decile 9 Income",
+                "Decile 10 Income","Mean Income")
+tab.dat[,which(names(tab.dat) %in% round.vars)] <- round(tab.dat[,which(names(tab.dat) %in% round.vars)])
+tab.dat$Country <- as.character(tab.dat$Country)
+tab.notes <- c("Source: Global Consumption and Income Project. All incomes expressed in 2005 USD PPP.")
+tab.notes <- c(tab.notes,rep("",ncol(tab.dat)-1))
+tab.dat <- rbind(names(tab.dat),tab.dat)
+tab.dat <- rbind(tab.notes,tab.dat)
+names(tab.dat) <- rep("",length(names(tab.dat)))
+write.csv(tab.dat, file="GCIPrawdata.csv",row.names = F)
+
+### 5. Main Loop
 ############################################################
 # Could also just list individual years, but need to alter export section at end of this script accordingly
 
@@ -267,14 +289,14 @@ final <- sing_year.expanded[vars_list]
 #deciles <- temp
 
 
-### 5. Export as .html code
+### 6. Export as .html code
 ############################################################
 
 #write.csv(final, file = paste("Data/data", yr))
 
 # This exports the full html with links to each year
 
-sink(paste("docs/html/fig_",k,".html", sep =""))
+#sink(paste("docs/html/fig_",k,".html", sep ="")) # comment out to restrict output
 
 cat("\n")
 cat("<!--Comment-->")
@@ -1071,6 +1093,6 @@ cat(" </body>")
 cat("\n")
 cat("</html>")
 
-sink()
+#sink() # comment out if not producing output
 
 }
