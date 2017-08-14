@@ -14,6 +14,8 @@ Here we use PPP-adjusted data on real incomes from the [Global Consumption and I
 
 [Right-click here and select 'save link as' to get the data](https://raw.githubusercontent.com/jackblun/Globalinc/master/GCIPrawdata.csv){: .button}
 
+You can also <a href="https://raw.githubusercontent.com/jackblun/Globalinc/master/GCIPrawdata.csv" download> download the data here. </a>
+ 
 Taller blocks correspond to higher incomes. Countries with larger populations are assigned more blocks. Colours correspond to how rich the country is in 1980, with poorer countries shaded red and richer countries shaded green. Countries are ordered according to mean income level in each year, while holding colours fixed from the 1980 levels. Therefore with these figures we can see inequality within and across countries over time as well as changes in average income.
 
 [![1980_clip](/img/1980_clip.PNG){:class="img-responsive" height="100%" width="100%"}](html/fig_1980.html)
