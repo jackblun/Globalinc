@@ -1053,7 +1053,7 @@ cat("\n")
 cat("		<div id=\"chartdiv\" style=\"width: 100%; height: 600px; background-color: #F3F2F7;\" ></div>")
 cat("\n")
 cat(" <br/>")
-cat("<a href=\"https://raw.githubusercontent.com/jackblun/Globalinc/master/GCIPrawdata.csv\" download =\"download\"> Download the data </a>, pick another year, or return to the <a href=\"https://jackblun.github.io/Globalinc/\">home</a> page to learn more about the project <br /> <br />")
+cat("<a href=\"https://raw.githubusercontent.com/jackblun/Globalinc/master/GCIPrawdata.xlsx\" download =\"download\"> Download the data </a>, pick another year, or return to the <a href=\"https://jackblun.github.io/Globalinc/\">home</a> page to learn more about the project <br /> <br />")
 cat("\n")
 #cat(" <br/>")
 if (k == 1980){
