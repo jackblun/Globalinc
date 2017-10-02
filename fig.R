@@ -144,6 +144,7 @@ full$income7 <- 12*full$income7
 full$income8 <- 12*full$income8
 full$income9 <- 12*full$income9
 full$income10 <- 12*full$income10
+full$mean <- 12*full$mean
 
 ### 4. Export data as .csv
 ############################################################
