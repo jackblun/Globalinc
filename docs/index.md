@@ -26,9 +26,9 @@ Bob Sutcliffe designed the representation of global inequality in this figure. A
 
 ## Contact
 
-Questions? Comments? Concerns? Get in touch using jackblun@gmail.com.
+Questions? Comments? Concerns? Get in touch using jackblun@stanford.edu.
 
-Created by Jack Blundell
+Created by [Jack Blundell](https://www.stanford.edu/~jackblun) 
 
 ## Countries included in GCIP
 
