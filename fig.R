@@ -175,7 +175,7 @@ write.csv(tab.dat, file="GCIPrawdata.csv",row.names = F)
 # Could also just list individual years, but need to alter export section at end of this script accordingly
 
 st_year <- 1980 # first year
-end_year <- 2015 # last year
+end_year <- 2014 # last year
 
 for (k in st_year:end_year){ #
   
@@ -1087,7 +1087,7 @@ cat("Source: Global Consumption and Income Project")
 cat("\n")
 cat(" <br/> <br/>")
 cat("\n")
-cat("Countries with population size under 750,000 are omitted. The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand, Jordan. These countries constituted less than 0.1% of world population in 2015.")
+cat("Countries with population size under 750,000 are omitted. The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand, Jordan. These countries constituted less than 0.1% of world population in 2014.")
 cat("\n")
   cat("</center>")
   cat("\n")
