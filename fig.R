@@ -25,7 +25,7 @@ library(reshape)
 #library(xlsx)
 
  
-raw <- read.csv("/Users/Jack/Dropbox/Documents/Projects/CORE/skyscraper/data/data_update_april2019/gid-previewexcel.csv", sep=',', header=TRUE)  # Full dataset
+raw <- read.csv("/Users/Jack/Dropbox/Documents/Projects/CORE/skyscraper/data/gid-previewexcel.csv", sep=',', header=TRUE)  # Full dataset
 full <- raw
 
 ### 2. Filter countries
@@ -52,8 +52,8 @@ for (i in 1:dim(full)[1]){
     full$drop[i] <- 1
   if (full$country[i] == "New Zealand")
     full$drop[i] <- 1
-  if (full$country[i] == "Jordan")
-    full$drop[i] <- 1
+  #if (full$country[i] == "Jordan")
+  #  full$drop[i] <- 1
 }
 
 #if (year == 2014 & drop )  {
@@ -1087,7 +1087,7 @@ cat("Source: Global Consumption and Income Project")
 cat("\n")
 cat(" <br/> <br/>")
 cat("\n")
-cat("Countries with population size under 750,000 are omitted. The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand, Jordan. These countries constituted less than 0.1% of world population in 2014.")
+cat("Countries with population size under 750,000 are omitted. The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand. These countries constituted less than 0.1% of world population in 2014.")
 cat("\n")
   cat("</center>")
   cat("\n")
