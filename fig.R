@@ -3,7 +3,7 @@
 
 # Jack Blundell
 # Stanford University
-# Spring 2017
+# Spring 2019
 
 ############################################################
 ## This file takes GCIP data and produces .html graphs
@@ -16,7 +16,7 @@ rm(list = ls())
 options("scipen"=100, "digits"=4)
 
 
-setwd("C:/Users/Jack/Documents/Git/Globalinc") # set to github dir
+setwd("~/git_repos/Globalinc/") # set to github dir
 
 library(epade)
 #library(plotly)
@@ -25,7 +25,7 @@ library(reshape)
 #library(xlsx)
 
  
-raw <- read.csv("/Users/Jack/Dropbox/Documents/Projects/CORE/skyscraper/data/gid-previewexcel.csv", sep=',', header=TRUE)  # Full dataset
+raw <- read.csv("/Users/Jack/Dropbox/Documents/Projects/CORE/skyscraper/data/data_update_april2019/gid-previewexcel.csv", sep=',', header=TRUE)  # Full dataset
 full <- raw
 
 ### 2. Filter countries
@@ -51,6 +51,8 @@ for (i in 1:dim(full)[1]){
   if (full$country[i] == "Georgia"  & full$year[i] >= 1996)
     full$drop[i] <- 1
   if (full$country[i] == "New Zealand")
+    full$drop[i] <- 1
+  if (full$country[i] == "Jordan")
     full$drop[i] <- 1
 }
 
@@ -149,7 +151,7 @@ full$mean <- 12*full$mean
 ### 4. Export data as .csv
 ############################################################
 
-tab.dat <- full[which(full$year>=1980 & full$year<=2014),]
+tab.dat <- full[which(full$year>=1980 & full$year<=2015),]
 keep.vars <- c("country","income1","income2","income3","income4","income5","income6",
                "income7","income8","income9","income10","mean","population","year")
 tab.dat <- tab.dat[,which(names(tab.dat) %in% keep.vars)]
@@ -173,7 +175,7 @@ write.csv(tab.dat, file="GCIPrawdata.csv",row.names = F)
 # Could also just list individual years, but need to alter export section at end of this script accordingly
 
 st_year <- 1980 # first year
-end_year <- 2014 # last year
+end_year <- 2015 # last year
 
 for (k in st_year:end_year){ #
   
@@ -1085,7 +1087,7 @@ cat("Source: Global Consumption and Income Project")
 cat("\n")
 cat(" <br/> <br/>")
 cat("\n")
-cat("Countries with population size under 750,000 are omitted. The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand. These countries constituted less than 0.1% of world population in 2014.")
+cat("Countries with population size under 750,000 are omitted. The following countries included in GCIP are omitted from the graphs due to statistical problems: Singapore (before 2000), Uganda, Bosnia and Herzegovina (from 1996), Georgia (from 1996), New Zealand, Jordan. These countries constituted less than 0.1% of world population in 2015.")
 cat("\n")
   cat("</center>")
   cat("\n")
